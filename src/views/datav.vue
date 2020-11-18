@@ -13,10 +13,10 @@ export default {
   data() {
     return {
       config: {
-        header: ["商品名称", "商品价格", "单位"],
+        header: ['<span style="font-size: 1.5em;">商品名称</span>', '<span style="font-size: 1.5em;">商品价格</span>', '<span style="font-size: 1.5em;">单位</span>'],
         rowNum: 10,
         carousel: "single",
-        indexHeader: "序号",
+        indexHeader: '<span style="font-size: 1.5em;">序号</span>',
         waitTime: 1000,
         data: [
           ["行1列1", "行1列2", "行1列3"],
