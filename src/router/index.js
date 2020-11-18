@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Echarts from '../views/Echarts.vue'
+import Datav from '../views/datav.vue'
+
 
 Vue.use(VueRouter)
 
@@ -17,6 +20,16 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path:'/echarts',
+    name:'Echarts',
+    component: Echarts
+  },
+  {
+    path:'/datav',
+    name:'Datav',
+    component:Datav
   }
 ]
 
